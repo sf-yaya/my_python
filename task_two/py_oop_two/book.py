@@ -11,7 +11,7 @@ class Book:
 
     # 定义关上的方法
     def close(self):
-        print("请关上书本休息一会儿吧！")
+        print("请关上书本休息一会儿吧！！！")
 
     # 定义阅读的方法
     def read(self, name):

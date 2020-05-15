@@ -10,7 +10,7 @@ class Car:
     # 定义变量
     wheel = 4
     steering_wheel = "我是方向盘，可以随意调整方向哦"
-    horn = "我是一个小喇叭，可以发出嘀嘀嘀的声音！"
+    horn = "我是一个小喇叭，可以发出嘀嘀嘀的声音！！！"
 
     # 定义run的方法
     def run(self, wheel):
