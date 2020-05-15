@@ -18,21 +18,16 @@ A 已按非递减顺序排序。
 """
 
 # 列表推导式一
-list3 = [5,-3,2,3,11,-5,40]
+list3 = [5, -3, 2, 3, 11, -5, 40]
 print(sorted([list3[j] ** 2 for j in range(len(list3))]))
 
 # 列表推导式二
-list1 = [-4,20,0,6,10,50,25]
+list1 = [-4, 20, 0, 6, 10, 50, 25]
 list2 = [list1[i] ** 2 for i in range(len(list1))]
-# 对列表进行排序
+# 按非递减顺序排序
 list2.sort()
 # 打印排序后的列表值
 print(list2)
-
-
-
-
-
 
 # list1 = [-4,-1,0,3,10]
 # list2=[]
@@ -42,6 +37,3 @@ print(list2)
 #
 #
 # print(list2)
-
-
-
