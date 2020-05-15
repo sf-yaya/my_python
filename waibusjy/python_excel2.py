@@ -26,7 +26,7 @@ class Identity_information:
         # self.height = [100, 170, 160, 150, 161]
         # self.weight = [50, 60, 55, 40, 70]
         # 字典类型
-        self.data_dict = {170: 60, 175:63, 160: 52, 150: 42,162:45}
+        self.data_dict = {170: 60, 175: 63, 160: 52, 150: 42, 162: 45}
         self.list1 = [50, 60, 55, 40, 70, 20, 60]
 
     def create_date(self):
@@ -50,6 +50,7 @@ class Identity_information:
         # ws3 = self.wb.create_sheet(title="test")
         # ws3["A1"] = "我在测试pythone写入数据功能"
 
+        # 创建成功后进行保存
         self.wb.save(self.dest_filename)
 
     # 读取文件
@@ -69,7 +70,7 @@ class Identity_information:
             # 健康体重公式
             health = (height - 70) * 0.6
             if weight == health:
-                print(str(name)+"的体重是"+str(weight)+"kg，非常健康")
+                print(str(name) + "的体重是" + str(weight) + "kg，非常健康")
                 # 新增一列备注健康体重
                 sheet_info.cell(row=i + 2, column=4, value="健康体重")
         wb.save(self.dest_filename)
