@@ -34,7 +34,7 @@ for i in range(len(list1) - 1):
         # 如果前面一位数大于后一位数，进行位置调换
         if list1[j] > list1[j+1]:
             list1[j], list1[j+1] = list1[j+1], list1[j]
-# 打印排序后的列表
+# 打印排序后的列表结果
 print(list1)
 
 
