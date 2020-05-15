@@ -14,8 +14,8 @@ from openpyxl import Workbook, load_workbook
 
 class Identity_information:
     def __init__(self):
-        self.wb1 = Workbook()
-        self.ws1 = self.wb1.active
+        self.wb = Workbook()
+        self.ws1 = self.wb.active
         self.ws1.title = "information"
         self.dest_filename = 'Identity_information.xlsx'
         # 写入一组数据，姓名，身高，体重
@@ -23,10 +23,10 @@ class Identity_information:
         self.ws1["B1"] = "身高"
         self.ws1["C1"] = "体重"
         self.name = ["yaya", "yanyan", "fenfen", "花花", "小丽"]
-        # self.height = [100, 170, 160, 150, 165]
+        # self.height = [100, 170, 160, 150, 161]
         # self.weight = [50, 60, 55, 40, 70]
         # 字典类型
-        self.data_dict = {170: 60, 175:63, 160: 52, 150: 42,161:45}
+        self.data_dict = {170: 60, 175:63, 160: 52, 150: 42,162:45}
         self.list1 = [50, 60, 55, 40, 70, 20, 60]
 
     def create_date(self):
@@ -43,13 +43,14 @@ class Identity_information:
 
         # 自增代码
         # 创建第二个页签
-        # ws2 = self.wb1.create_sheet(title="Pi")
+        # ws2 = self.wb.create_sheet(title="Pi")
         # for j in range(len(self.list1)):
         #     ws2.cell(row=j + 1, column=j + 1).value = self.list1[j]
         # # 创建第二个页签
-        # ws3 = self.wb1.create_sheet(title="test")
+        # ws3 = self.wb.create_sheet(title="test")
         # ws3["A1"] = "我在测试pythone写入数据功能"
-        # self.wb1.save(self.dest_filename)
+
+        self.wb.save(self.dest_filename)
 
     # 读取文件
     def get_info(self):
