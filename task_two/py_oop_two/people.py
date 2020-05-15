@@ -9,9 +9,8 @@ python实战练习2
 class People:
     # 定义变量
     lovely = "我很可爱"
-    hand = "我有一双手"
     feet = "我有一双大长腿"
-    eye = "我是单眼皮"
+    eye = "我是单眼皮的小姐姐"
 
     # 定义一个吃的方法
     def eat(self):
@@ -24,7 +23,7 @@ class People:
 
 # 类的实例化
 pp = People()
-# 调用类中的方法及属性
+# 调用类中的方法、属性
 pp.run()
 pp.eat()
 print(pp.lovely)

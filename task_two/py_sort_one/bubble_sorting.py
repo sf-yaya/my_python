@@ -21,20 +21,20 @@ for i in range(1, len(list_sort)):
 # 打印列表排序后的结果
 print(list_sort)
 
-# 冒泡排序第二种写法
-# 定义一个列表
-list1 = [11, 9, 8, 10, 4, 50, 28]
-# 循环列表的排序次数
-# 索引i从0开始，所以for循环的次数等于列表长度减1
-for i in range(len(list1) - 1):
-    print("这是第{}次排序".format(i))
-    # j索引从0开始，列表每排序一次，就对比（列表长度-列表当前循环次数-1）次
-    for j in range(len(list1)-i-1):
-        print("这是第{}对比".format(j))
-        # 如果前面一位数大于后一位数，进行位置调换
-        if list1[j] > list1[j+1]:
-            list1[j], list1[j+1] = list1[j+1], list1[j]
-# 打印排序后的列表结果
-print(list1)
+# # 冒泡排序第二种写法
+# # 定义一个列表
+# list1 = [11, 9, 8, 10, 4, 50, 28]
+# # 循环列表的排序次数
+# # 索引i从0开始，所以for循环的次数等于列表长度减1
+# for i in range(len(list1) - 1):
+#     print("这是第{}次排序".format(i))
+#     # j索引从0开始，列表每排序一次，就对比（列表长度-列表当前循环次数-1）次
+#     for j in range(len(list1)-i-1):
+#         print("这是第{}对比".format(j))
+#         # 如果前面一位数大于后一位数，进行位置调换
+#         if list1[j] > list1[j+1]:
+#             list1[j], list1[j+1] = list1[j+1], list1[j]
+# # 打印排序后的列表结果
+# print(list1)
 
 

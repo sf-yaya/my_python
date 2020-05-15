@@ -25,7 +25,7 @@ class Dog:
 
     # 定义私有属性、私有方法
     def __privet_style(self):
-        print("我只属于我的小主人")
+        print("我只属于我的小主人！！！")
 
 
 # 实例化类

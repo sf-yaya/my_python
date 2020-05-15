@@ -9,7 +9,7 @@ class RiceCooker:
         print("我的容量很多大,{}，可以煮很多米饭".format(size))
 
     def stew_soup(self):
-        print("我煲的汤好香呀！")
+        print("我煲的汤好香呀！！！")
 
 
 # 实例化类
