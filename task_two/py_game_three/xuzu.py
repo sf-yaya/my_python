@@ -4,7 +4,7 @@
 
 """
 
-from task_two.py_game_three.tl.tonglao import TongLao
+from task_two.py_game_three.tonglao import TongLao
 
 
 # 定义一个类
